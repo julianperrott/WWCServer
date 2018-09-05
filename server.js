@@ -225,5 +225,3 @@ var testData = {
 
 
 console.log('I am alive on port ' + port);
-
-app.listen(port, () => console.log('Example app listening on port ' + port));
