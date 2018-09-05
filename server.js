@@ -7,7 +7,7 @@ var port;
 if (process && process.env) { port = process.env.PORT; }
 
 if (!port) {
-  port = 80;
+  port = 8080;
   console.log('post was undefined, defaulting to ' + port);
 }
 
@@ -225,3 +225,5 @@ var testData = {
 
 
 console.log('I am alive on port ' + port);
+
+app.listen(port, () => console.log('Example app listening on port ' + port));
